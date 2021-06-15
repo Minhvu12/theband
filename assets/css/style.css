@@ -1,0 +1,411 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* vi tri
+    kich thuoc
+    mau sac
+    kieu dang
+ */
+
+html{ 
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    scroll-behavior: smooth !important;
+    /* chuyen tiep nuot na */
+}
+
+.text-white{
+    color: white !important;
+}
+
+.clear{
+    clear: both;
+}
+
+#main{
+    
+}
+
+#header{
+    height: 46px;
+    background-color: black;
+    position: fixed ;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav>li:hover>a{
+    color: black;
+    background-color: #ccc ;
+}
+
+#nav .subnav li:hover a{
+    background-color: #ccc;
+}
+
+#nav li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    line-height: 46px;
+    padding: 0 24px;
+}
+
+#nav > li > a {
+    text-transform: uppercase;
+}
+
+.menu-icon{
+    display: none;
+}
+
+#nav .subnav{
+    display: none;
+    position:absolute;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    min-width: 160px;
+}
+
+#nav .subnav a{
+    color: black;
+    width: 100%;
+    padding-left: 12px;
+    line-height: 38px;
+}
+
+#nav .subnav li {
+    width: 100%;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav .icon{
+    font-size: 14px;
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
+#search{
+    display: inline-block;
+    float: right;
+}
+
+#search .search-icon{
+    font-size: 18px;
+    color: white;
+    line-height: 46px;
+    padding: 0 24px;
+}
+
+#search:hover {
+    background-color: #f44336;
+}
+
+#slider{
+    margin-top: 46px;
+    padding-top: 50%;
+    /* 50% chieu ngang cua chinh no */
+    /* % se tinh theo chieu ngang */
+    /* pixel thi khong doi */
+    background-image: url(../img/cropped-1920-1080-459857.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#slider .chicago {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 64px;
+    color: white;
+    z-index: 1;
+}
+
+#slider .ttext{
+    font-weight: 400;
+    padding-bottom: 15px;
+    font-size: 24px;
+}
+
+#slider .btext{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#about{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    padding: 64px 16px;
+    max-width: 100%;
+}
+
+#contenttext{
+    width: 100%;
+}
+
+#about .heading-text{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    /* khoang cach giua cac chu */
+}
+
+#about .subheading{
+    text-align: center;
+    margin: 15px 0;
+    font-size: 15px;
+    opacity: 0.4;
+    font-style: italic;
+    font-weight: 500;
+}
+
+#about .pharagrap {
+    margin: 15px 0;
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+#teampicture{
+    padding: 32px 0;
+    width: 100%;
+    
+}
+
+#teampicture .member{
+    float: left;
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+#teampicture .name{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+#teampicture .memberpicture{
+    float: none;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    width: 153.58px;
+    height: 153.58px;
+}
+
+#tour{
+    background-color: black;
+}
+
+#tickets li {
+    background-color: white;
+    padding: 8px 16px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid #ddd;
+}
+
+#tickets {
+    margin: 40px 0;
+}
+
+.out{
+    color: white ;
+    background-color: #f44336;
+    margin: 0 16px;
+    padding: 2px 8px;
+}
+
+.nu{
+    color: white;
+    float: right;
+    background-color: black;
+    padding: 2px 8px;
+    border-radius: 30px;
+}
+
+#places{
+    margin-right: -8px;
+    margin-left: -8px;
+    padding-bottom: 32px;
+}
+
+.places1{
+    float: left;
+    width: 33.33333%;
+    padding: 0 8px;
+    background-color: white;
+    background-clip: content-box;
+}
+
+.places1 > img{
+    width: 100%;
+}
+
+.headsub {
+    margin: 15px 0px;
+}
+
+.contentsub{
+    margin: 15px 0;
+    font-weight: 500;
+    color: #757575;
+}
+
+.subif{
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+.button{
+    margin: 15px 0;
+    font-weight: 550;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+.sub{
+    padding: 0px 16px;
+}
+
+.button:hover{
+    background-color: #757575;
+    cursor: pointer;
+}
+
+#information{
+    padding: 32px 0;
+}
+
+.if{
+    width: 50%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    display: inline-block;
+    float: left;
+}
+
+.icon123{
+    margin-right: 20px;
+}
+
+
+.note{
+    width: 50%;
+    display: inline-block;
+}
+
+.leftn{
+    display: inline-block;
+    width: 48%;
+    float: left;
+    font-size: 15px;
+    padding: 8px;
+    border: 1px solid #757575;
+}
+
+.rightn{
+    display: inline-block;
+    float: right;
+    font-size: 15px;
+    padding: 8px ;
+    width: 48%;
+    border: 1px solid #757575;
+}
+
+.topn{
+    margin-bottom: 16px;
+}
+
+.midn{
+    width: 100%;
+    font-size: 15px;
+    padding: 8px;
+}
+
+.end{
+    float: right;
+    display: inline-block;
+    font-size: 15px;
+    margin: 16px 0;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.end:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #757575;
+    border: none;
+}
+
+.map > img{
+    width: 100%;
+    margin-bottom: -3px;
+}
+
+#footer{
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 64px 16px;
+}
+
+.foot-icon{
+    opacity: 0.6;
+    font-size: 24px;
+}
+
+.footsub{
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.6;
+    margin: 15px 0px;
+}
+
+.footsub > a {
+    text-decoration-line: underline;
+    text-decoration-color: rgba(0, 0, 0, 0.6);
+}
+
+.footsub > a:hover{
+    cursor: pointer;
+}
+
+.foot-icon > i:hover{
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+/* 
+pc >= 1024px
+tablet >= 720px <1024px
+*/

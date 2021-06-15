@@ -1,0 +1,67 @@
+/* mobile */
+@media (max-width: 739px){
+    #header{
+        overflow: hidden;
+    }
+
+
+    #nav > li {
+        display: block;
+    }
+    
+    #nav {
+        display: block;
+    }
+    #nav > li > a {
+        display: block;
+    }
+
+    #nav .subnav{
+        background-color: #f5f5f5;
+    }
+
+    #search{
+        display: none;
+    }
+    .HOME{
+        display: inline-block !important;
+    }
+    .HOME > a{
+        display: inline-block;
+    }
+    .menu-icon{
+        display: inline-block;
+        float: right;
+        color: white;
+        line-height: 46px;
+        font-size: 16px;
+        padding: 0 28px;
+    }
+
+    .menu-icon:hover{
+        background-color: #f5f5f5;
+        color: black;     
+    }
+    
+    #teampicture .member{
+        width: 100%;
+    }
+
+    #teampicture .memberpicture{
+        width: 229.19px;
+        height: 229.19px;
+    }
+    .places1{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .if{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .note{
+        width: 100%;
+    }
+}
